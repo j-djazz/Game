@@ -1,2 +1,2 @@
-label hi:
+label start:
     "hi"

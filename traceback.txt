@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 183, in script
+    menu:
+  File "game/script.rpy", line 188, in <module>
+    "Gymnasium." if day!=week[6]:
+NameError: name 'day' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 183, in script
+    menu:
+  File "C:\Users\nikos\Downloads\renpy-8.1.1-sdk\renpy\ast.py", line 1922, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "C:\Users\nikos\Downloads\renpy-8.1.1-sdk\renpy\exports.py", line 1072, in menu
+    condition = renpy.python.py_eval(condition)
+  File "C:\Users\nikos\Downloads\renpy-8.1.1-sdk\renpy\python.py", line 1153, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\nikos\Downloads\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 188, in <module>
+    "Gymnasium." if day!=week[6]:
+NameError: name 'day' is not defined
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.1.23060707
+GAYM 1.0
+Sun May 26 01:21:16 2024
